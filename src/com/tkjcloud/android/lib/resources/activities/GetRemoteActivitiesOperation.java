@@ -1,4 +1,4 @@
-/**  Nextcloud Android Library is available under MIT license
+/**  tkjcloud Android Library is available under MIT license
  *
  *   Copyright (C) 2017 Alejandro Bautista
  *   @author Alejandro Bautista
@@ -54,7 +54,7 @@ import java.util.List;
 /**
  * Provides the remote activities from the server handling the following data structure
  * accessible via the activities endpoint at {@value OCS_ROUTE_V12_AND_UP}, specified at
- * {@link "https://github.com/nextcloud/activity/blob/master/docs/endpoint-v2.md"}.
+ * {@link "https://github.com/tkjcloud/activity/blob/master/docs/endpoint-v2.md"}.
  */
 public class GetRemoteActivitiesOperation extends RemoteOperation{
 
@@ -83,7 +83,7 @@ public class GetRemoteActivitiesOperation extends RemoteOperation{
         ArrayList<Activity> activities;
         String url;
         if (nextUrl.isEmpty()) {
-            if (client.gettkjcloudVersion().compareTo(tkjcloudVersion.nextcloud_12) >= 0) {
+            if (client.gettkjcloudVersion().compareTo(tkjcloudVersion.tkjcloud_12) >= 0) {
                 url = client.getBaseUri() + OCS_ROUTE_V12_AND_UP;
             } else {
                 url = client.getBaseUri() + OCS_ROUTE_PRE_V12;
