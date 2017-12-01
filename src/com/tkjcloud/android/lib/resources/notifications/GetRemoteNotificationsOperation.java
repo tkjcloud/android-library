@@ -1,7 +1,7 @@
-/*  Nextcloud Android Library is available under MIT license
+/*  tkjcloud Android Library is available under MIT license
  *   Copyright (C) 2017 Andy Scherzinger
  *   Copyright (C) 2017 Mario Danic
- *   Copyright (C) 2017 Nextcloud GmbH
+ *   Copyright (C) 2017 tkjcloud GmbH
  *
  *   @author Andy Scherzinger
  *   @author Mario Danic
@@ -52,7 +52,7 @@ import java.util.List;
 /**
  * Provides the remote notifications from the server handling the following data structure
  * accessible via the notifications endpoint at {@value OCS_ROUTE_LIST_V12_AND_UP}, specified at
- * {@link "https://github.com/nextcloud/notifications/blob/master/docs/ocs-endpoint-v2.md"}.
+ * {@link "https://github.com/tkjcloud/notifications/blob/master/docs/ocs-endpoint-v2.md"}.
  */
 public class GetRemoteNotificationsOperation extends RemoteOperation {
 
@@ -83,7 +83,7 @@ public class GetRemoteNotificationsOperation extends RemoteOperation {
         GetMethod get = null;
         List<Notification> notifications;
         String url;
-        if (client.gettkjcloudVersion().compareTo(tkjcloudVersion.nextcloud_12) >= 0) {
+        if (client.gettkjcloudVersion().compareTo(tkjcloudVersion.tkjcloud_12) >= 0) {
             url = client.getBaseUri() + OCS_ROUTE_LIST_V12_AND_UP;
         } else {
             url = client.getBaseUri() + OCS_ROUTE_LIST_V9_AND_UP;
