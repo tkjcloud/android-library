@@ -212,7 +212,7 @@ public class AccountUtils {
 		tkjcloudVersion version;
 		if (ocVersion == null) {
 			// set to oldest supported version
-			version = tkjcloudVersion.nextcloud_10;
+			version = tkjcloudVersion.tkjcloud_10;
 		} else {
 			version = new tkjcloudVersion(ocVersion);
 		}
